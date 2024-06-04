@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\gsdle\\Masa\u00FCst\u00FC\\AB106\\Pronia\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9128FE6C-0543-414B-B819-A0345D6C127B}|Pronia\\Pronia.csproj|c:\\users\\gsdle\\masa\u00FCst\u00FC\\ab106\\pronia\\pronia\\viewcomponents\\headerviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9128FE6C-0543-414B-B819-A0345D6C127B}|Pronia\\Pronia.csproj|solutionrelative:pronia\\viewcomponents\\headerviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9128FE6C-0543-414B-B819-A0345D6C127B}|Pronia\\Pronia.csproj|c:\\users\\gsdle\\masa\u00FCst\u00FC\\ab106\\pronia\\pronia\\views\\shared\\_basket.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9128FE6C-0543-414B-B819-A0345D6C127B}|Pronia\\Pronia.csproj|solutionrelative:pronia\\views\\shared\\_basket.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9128FE6C-0543-414B-B819-A0345D6C127B}|Pronia\\Pronia.csproj|c:\\users\\gsdle\\masa\u00FCst\u00FC\\ab106\\pronia\\pronia\\views\\shared\\components\\header\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9128FE6C-0543-414B-B819-A0345D6C127B}|Pronia\\Pronia.csproj|solutionrelative:pronia\\views\\shared\\components\\header\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9128FE6C-0543-414B-B819-A0345D6C127B}|Pronia\\Pronia.csproj|c:\\users\\gsdle\\masa\u00FCst\u00FC\\ab106\\pronia\\pronia\\controllers\\basketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9128FE6C-0543-414B-B819-A0345D6C127B}|Pronia\\Pronia.csproj|solutionrelative:pronia\\controllers\\basketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9128FE6C-0543-414B-B819-A0345D6C127B}|Pronia\\Pronia.csproj|c:\\users\\gsdle\\masa\u00FCst\u00FC\\ab106\\pronia\\pronia\\views\\shared\\components\\footer\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9128FE6C-0543-414B-B819-A0345D6C127B}|Pronia\\Pronia.csproj|solutionrelative:pronia\\views\\shared\\components\\footer\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9128FE6C-0543-414B-B819-A0345D6C127B}|Pronia\\Pronia.csproj|c:\\users\\gsdle\\masa\u00FCst\u00FC\\ab106\\pronia\\pronia\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9128FE6C-0543-414B-B819-A0345D6C127B}|Pronia\\Pronia.csproj|solutionrelative:pronia\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HeaderViewComponent.cs",
+              "DocumentMoniker": "C:\\Users\\gsdle\\Masa\u00FCst\u00FC\\AB106\\Pronia\\Pronia\\ViewComponents\\HeaderViewComponent.cs",
+              "RelativeDocumentMoniker": "Pronia\\ViewComponents\\HeaderViewComponent.cs",
+              "ToolTip": "C:\\Users\\gsdle\\Masa\u00FCst\u00FC\\AB106\\Pronia\\Pronia\\ViewComponents\\HeaderViewComponent.cs",
+              "RelativeToolTip": "Pronia\\ViewComponents\\HeaderViewComponent.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAswB0AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T05:53:31.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BasketController.cs",
+              "DocumentMoniker": "C:\\Users\\gsdle\\Masa\u00FCst\u00FC\\AB106\\Pronia\\Pronia\\Controllers\\BasketController.cs",
+              "RelativeDocumentMoniker": "Pronia\\Controllers\\BasketController.cs",
+              "ToolTip": "C:\\Users\\gsdle\\Masa\u00FCst\u00FC\\AB106\\Pronia\\Pronia\\Controllers\\BasketController.cs",
+              "RelativeToolTip": "Pronia\\Controllers\\BasketController.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAowBoAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T05:53:17.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\gsdle\\Masa\u00FCst\u00FC\\AB106\\Pronia\\Pronia\\Views\\Shared\\Components\\Header\\Default.cshtml",
+              "RelativeDocumentMoniker": "Pronia\\Views\\Shared\\Components\\Header\\Default.cshtml",
+              "ToolTip": "C:\\Users\\gsdle\\Masa\u00FCst\u00FC\\AB106\\Pronia\\Pronia\\Views\\Shared\\Components\\Header\\Default.cshtml",
+              "RelativeToolTip": "Pronia\\Views\\Shared\\Components\\Header\\Default.cshtml",
+              "ViewState": "AQIAAAgDAAAAAAAAAAAAABwDAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-04T05:52:38.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Basket.cshtml",
+              "DocumentMoniker": "C:\\Users\\gsdle\\Masa\u00FCst\u00FC\\AB106\\Pronia\\Pronia\\Views\\Shared\\_Basket.cshtml",
+              "RelativeDocumentMoniker": "Pronia\\Views\\Shared\\_Basket.cshtml",
+              "ToolTip": "C:\\Users\\gsdle\\Masa\u00FCst\u00FC\\AB106\\Pronia\\Pronia\\Views\\Shared\\_Basket.cshtml",
+              "RelativeToolTip": "Pronia\\Views\\Shared\\_Basket.cshtml",
+              "ViewState": "AQIAACMAAAAAAAAAAAAAAAAAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-04T05:42:38.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\gsdle\\Masa\u00FCst\u00FC\\AB106\\Pronia\\Pronia\\Views\\Shared\\Components\\Footer\\Default.cshtml",
+              "RelativeDocumentMoniker": "Pronia\\Views\\Shared\\Components\\Footer\\Default.cshtml",
+              "ToolTip": "C:\\Users\\gsdle\\Masa\u00FCst\u00FC\\AB106\\Pronia\\Pronia\\Views\\Shared\\Components\\Footer\\Default.cshtml",
+              "RelativeToolTip": "Pronia\\Views\\Shared\\Components\\Footer\\Default.cshtml",
+              "ViewState": "AQIAAC8BAAAAAAAAAAAAAGsBAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-04T05:39:18.57Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\gsdle\\Masa\u00FCst\u00FC\\AB106\\Pronia\\Pronia\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Pronia\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\gsdle\\Masa\u00FCst\u00FC\\AB106\\Pronia\\Pronia\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Pronia\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABkAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-03T09:28:31.339Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

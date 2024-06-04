@@ -1,0 +1,25 @@
+﻿@model CreateSliderVM
+
+<form method="post" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label asp-for="Title"></label>
+        <input asp-for="Title" type="text" class="form-control" name="Title">
+        <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="SubTitle"></label>
+        <input asp-for="SubTitle" type="text" class="form-control" name="SubTitle">
+        <span asp-validation-for="SubTitle" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Discount"></label>
+        <input asp-for="Discount" type="number" class="form-control" name="Discount">
+        <span asp-validation-for="Discount" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="ImageFile"></label>
+        <input asp-for="ImageFile" accept="image*/" class="form-control" name="ImageFile">
+        <span asp-validation-for="ImageFile" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

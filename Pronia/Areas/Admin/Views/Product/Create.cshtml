@@ -1,0 +1,54 @@
+﻿@model CreateProductVM
+
+<form method="post" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" name="Name">
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="SellPrice"></label>
+        <input asp-for="SellPrice" type="number" class="form-control" name="SellPrice">
+        <span asp-validation-for="SellPrice" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="CostPrice"></label>
+        <input asp-for="CostPrice" type="number" class="form-control" name="CostPrice">
+        <span asp-validation-for="CostPrice" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Discount"></label>
+        <input asp-for="Discount" type="number" class="form-control" name="Discount">
+        <span asp-validation-for="Discount" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="StockCount"></label>
+        <input asp-for="StockCount" type="number" class="form-control" name="StockCount">
+        <span asp-validation-for="StockCount" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Raiting"></label>
+        <input asp-for="Raiting" type="number" class="form-control" name="Raiting">
+        <span asp-validation-for="Raiting" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="CategoryIds"></label>
+        <select asp-for="CategoryIds" class="mb-3 form-control">
+            @foreach (var item in ViewBag.Categories)
+            {
+                <option value="@item.Id">@item.Name</option>
+            }
+        </select>
+    </div>
+    <div class="mb-3">
+        <label asp-for="ImageFile"></label>
+        <input asp-for="ImageFile" class="form-control" accept="image/*" name="ImageFile">
+        <span asp-validation-for="ImageFile" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="ImagesFile"></label>
+        <input asp-for="ImagesFile" class="form-control" accept="image/*" name="ImagesFile">
+        <span asp-validation-for="ImagesFile" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

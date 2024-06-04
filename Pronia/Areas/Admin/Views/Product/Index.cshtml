@@ -1,0 +1,76 @@
+﻿
+@model List<GetProductAdminVM>
+
+
+<h5 class="card-title fm-semibold mb-4">Slider</h5>
+<div class="table-responsive">
+    <a asp-action="Create" type="button" class="btn btn-outline-success m-1 float-end">Create</a>
+    <table class="table table-bordered text-nowrap mb-0 align-middle">
+        <thead class="text-dark fs-4">
+            <tr>
+                <th class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">Id</h6>
+                </th>
+                <th class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">Name</h6>
+                </th>
+                <th class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">SellPrice</h6>
+                </th>
+                <th class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">CostPrice</h6>
+                </th>
+                <th class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">Discount</h6>
+                </th>
+                <th class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">StockCount</h6>
+                </th>
+                <th class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">Raiting</h6>
+                </th>
+                <th class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">ImageUrl</h6>
+                </th>
+                <th class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">Action</h6>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td class="border-bottom-0">
+                        @item.Id
+                    </td>
+                    <td class="border-bottom-0">
+                        @item.Name
+                    </td>
+                    <td class="border-bottom-0">
+                        @item.SellPrice
+                    </td>
+                    <td class="border-bottom-0">
+                        @item.CostPrice
+                    </td>
+                    <td class="border-bottom-0">
+                        @item.Discount
+                    </td>
+                    <td class="border-bottom-0">
+                        @item.StockCount
+                    </td>
+                    <td class="border-bottom-0">
+                        @item.Raiting
+                    </td>
+                    <td class="border-bottom-0">
+                        <img src="~/@item.ImageUrl" width="60px" />
+                    </td>
+                    <td class="border-bottom-0">
+                        <a asp-action="Update" asp-route-id="@item.Id" type="button" class="btn btn-outline-warning m-1">Edit</a>
+                        <a asp-action="Delete" asp-route-id="@item.Id" type="button" class="btn btn-outline-danger m-1">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

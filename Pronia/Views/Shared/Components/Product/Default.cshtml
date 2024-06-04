@@ -1,0 +1,70 @@
+﻿@model IEnumerable<GetProductVM>
+<div class="product-item-wrap row">
+    @foreach (var item in Model)
+    {
+        <div class="col-xl-3 col-md-4 col-sm-6 pt-4">
+            <div class="product-item">
+                <div class="product-img">
+                    <a href="shop.html">
+                        <img class="primary-img"
+                             src="~/@item.ImageUrl"
+                             alt="Product Images" />
+                    </a>
+                    <div class="product-add-action">
+                        <ul>
+                            <li>
+                                <a href="wishlist.html"
+                                   data-tippy="Add to wishlist"
+                                   data-tippy-inertia="true"
+                                   data-tippy-animation="shift-away"
+                                   data-tippy-delay="50"
+                                   data-tippy-arrow="true"
+                                   data-tippy-theme="sharpborder">
+                                    <i class="pe-7s-like"></i>
+                                </a>
+                            </li>
+                            <li class="quuickview-btn"
+                                data-bs-toggle="modal"
+                                data-bs-target="#quickModal">
+                                <a href="#"
+                                   data-tippy="Quickview"
+                                   data-tippy-inertia="true"
+                                   data-tippy-animation="shift-away"
+                                   data-tippy-delay="50"
+                                   data-tippy-arrow="true"
+                                   data-tippy-theme="sharpborder">
+                                    <i class="pe-7s-look"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a asp-action="addbasket" asp-controller="basket" asp-route-id="@item.Id"
+                                   data-tippy="Add to cart"
+                                   data-tippy-inertia="true"
+                                   data-tippy-animation="shift-away"
+                                   data-tippy-delay="50"
+                                   data-tippy-arrow="true"
+                                   data-tippy-theme="sharpborder">
+                                    <i class="pe-7s-cart"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <a class="product-name" href="shop.html">@item.Name</a>
+                    <div class="price-box pb-1">
+                        <span class="new-price">$@item.SellPrice</span>
+                    </div>
+                    <div class="rating-box">
+                        <ul>
+                            @for (int i = 0; i < item.Raiting; i++)
+                            {
+                                <li><i class="fa fa-star"></i></li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

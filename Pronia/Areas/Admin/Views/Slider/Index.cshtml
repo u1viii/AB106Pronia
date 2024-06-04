@@ -1,0 +1,142 @@
+﻿@model List<GetSliderAdminVM>
+
+
+<h5 class="card-title fm-semibold mb-4">Slider</h5>
+<div class="table-responsive">
+    <a asp-action="Create" type="button" class="btn btn-outline-success m-1 float-end">Create</a>
+    <table class="table table-bordered text-nowrap mb-0 align-middle">
+        <thead class="text-dark fs-4">
+            <tr>
+                <th class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">Id</h6>
+                </th>
+                <th class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">Title</h6>
+                </th>
+                <th class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">Subtitle</h6>
+                </th>
+                <th class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">Discount</h6>
+                </th>
+                <th class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">Image</h6>
+                </th>
+                <th class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">CreateTime</h6>
+                </th>
+                <th class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">UpdateTime</h6>
+                </th>
+                <th class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">Visibility</h6>
+                </th>
+                <th class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">Action</h6>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td class="border-bottom-0">
+                        @item.Id
+                    </td>
+                    <td class="border-bottom-0">
+                        @item.Title
+                    </td>
+                    <td class="border-bottom-0">
+                        @item.SubTitle
+                    </td>
+                    <td class="border-bottom-0">
+                        @item.Discount
+                    </td>
+                    <td class="border-bottom-0">
+                        <img src="@item.ImageUrl" width="70px" />
+                    </td>
+                    <td class="border-bottom-0">
+                        @item.CreateTime
+                    </td>
+                    <td class="border-bottom-0">
+                        @item.UpdateTime
+                    </td>
+                    <td class="border-bottom-0">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input change-visiblity" slider-id="@item.Id" type="checkbox" style="width: 55px; height: 30px;" checked="@(!item.IsDeleted)">
+                        </div>
+                    </td>
+                    <td class="border-bottom-0">
+                        <a asp-action="Update" asp-route-id="@item.Id" type="button" class="btn btn-outline-warning m-1">Edit</a>
+                        <a asp-action="Delete" asp-route-id="@item.Id" type="button" class="btn btn-outline-danger m-1">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody> 
+    </table>
+</div>
+
+
+<div class="page-prev" style="margin-left:30%; margin-top:2%;">
+    <ul class="pagination">
+        @if (@ViewBag.CurrentPage != 1)
+        {
+            <li class="page-item">
+                <a class="page-link" asp-action="index" asp-route-page="@ViewBag.PrevPage" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                </a>
+            </li>
+        }
+        
+        @for (int i=1;i<=ViewBag.MaxPage; i++)
+        {
+            <li class="page-item"><a class="page-link" asp-action="index" asp-route-page="@(i-1)">@i</a></li>
+        }
+        @if (ViewBag.CurrentPage != ViewBag.MaxPage)
+        {
+           <li class="page-item">
+                <a class="page-link" asp-action="index" asp-route-page="@ViewBag.CurrentPage" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </li>
+        }
+        
+    </ul>
+</div>
+
+@section styles{
+    <style>
+        .page-prev li{
+            padding:10px 3px !important;
+
+        }
+
+        .page-prev a {
+            background-color: whitesmoke;
+            padding: 10px 15px !important;
+        }
+    </style>
+}
+
+@section scripts{
+    <script>
+        var inputs = document.getElementsByClassName("change-visiblity");
+        inputs.forEach(i => {
+            i.addEventListener("change", () => {
+                fetch("http://localhost:5174/Admin/Slider/ChengeVisbility/" + i.getAttribute("slider-id"))
+                    .then(res => {
+                        if (res.status == 200) {
+                            alert("Status deyisdi")
+                        }
+                        else {
+                            alert("Problem var")
+                        }
+                    })
+                    .catch(err => console.log(err))
+            });
+        })
+        
+    </script>
+}
