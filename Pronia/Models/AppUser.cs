@@ -7,5 +7,6 @@ namespace Pronia.Models
         public string Name { get; set; }
         public string Surname { get; set; }
         public DateTime? BirthDate { get; set; }
+        public ICollection<BasketItem> BasketItems { get; set; }
     }
 }

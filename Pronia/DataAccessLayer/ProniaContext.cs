@@ -14,6 +14,8 @@ namespace Pronia.DataAccessLayer
         public DbSet<Product> Products { get; set; }
         public DbSet<ProductImage> ProductImages { get; set; }
         public DbSet<AppUser> AppUsers { get; set; }
+        public DbSet<BasketItem> BasketItems { get; set; }
+        public DbSet<Order> Orders { get; set; }
 
         public override Task<int> SaveChangesAsync(bool acceptAllChangesOnSuccess, CancellationToken cancellationToken = default)
         {
@@ -40,7 +42,7 @@ namespace Pronia.DataAccessLayer
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS;Database=ProniaDb;Trusted_Connection=True;TrustServerCertificate=True;"); 
+            optionsBuilder.UseSqlServer("Server=localhost;Database=ProniaDb;Trusted_Connection=True;TrustServerCertificate=True;"); 
             base.OnConfiguring(optionsBuilder);
         }
 
