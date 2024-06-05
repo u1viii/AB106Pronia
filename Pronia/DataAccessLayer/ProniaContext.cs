@@ -42,7 +42,7 @@ namespace Pronia.DataAccessLayer
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=localhost;Database=ProniaDb;Trusted_Connection=True;TrustServerCertificate=True;"); 
+            optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS;Database=ProniaDb;Trusted_Connection=True;TrustServerCertificate=True;"); 
             base.OnConfiguring(optionsBuilder);
         }
 

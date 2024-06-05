@@ -33,6 +33,86 @@
     @await Component.InvokeAsync("Header")
     @RenderBody()
     @await Component.InvokeAsync("Footer") 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"></link>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script>
+        function fillHTML(data) {
+            let html = '';
+            data.items.forEach(it => html += `<li class="minicart-product">
+                                    <a class="product-item_remove" href="#">
+                                        <i class="pe-7s-close"
+                                           data-tippy="Remove"
+                                           data-tippy-inertia="true"
+                                           data-tippy-animation="shift-away"
+                                           data-tippy-delay="50"
+                                           data-tippy-arrow="true"
+                                           data-tippy-theme="sharpborder"></i>
+                                    </a>
+                                    <a asp-action="Details" asp-controller="Product" asp-route-id=""
+                                       class="product-item_img">
+                                        <img class="img-full"
+                                                src="../${it.imageURL}"
+                                             alt="Product Image" />
+                                    </a>
+                                    <div class="product-item_content">
+                                        <a class="product-item_title"
+                                           href="Products/Details/${it.id}">${it.name}</a>
+                                        <span class="product-item_quantity">${it.count} x ${it.price}</span>
+                                    </div>
+                                </li>`)
+            document.getElementById("minicart-list").innerHTML = html;
+            document.getElementById("ammount").innerText = data.total;
+            for (i = 0; i < document.getElementsByClassName("quantity").length; i++) {
+                document.getElementsByClassName("quantity")[i].innerText = data.count;
+            }
+        }
+        function fetchData()
+        {
+            fetch('http://localhost:5174/basket/GetBasket')
+                .then(x => x.json())
+                .then(data => {
+                    fillHTML(data);
+                })
+        }
+        fetchData();
+        let addBaskets = document.getElementsByClassName("add-basket");
+        for (let i = 0; i < addBaskets.length; i++) {
+            document.getElementsByClassName("add-basket")[i].addEventListener("click", e => {
+                e.preventDefault();
+                let url = e.target.parentElement.getAttribute("href");
+                fetch(url)
+                .then(res => {
+                    if (res.ok) {
+                            Command: toastr["success"]("Səbətə əlavə olundu")
+
+                            toastr.options = {
+                                "closeButton": false,
+                                "debug": false,
+                                "newestOnTop": false,
+                                "progressBar": false,
+                                "positionClass": "toast-top-right",
+                                "preventDuplicates": false,
+                                "onclick": null,
+                                "showDuration": "300",
+                                "hideDuration": "1000",
+                                "timeOut": "5000",
+                                "extendedTimeOut": "1000",
+                                "showEasing": "swing",
+                                "hideEasing": "linear",
+                                "showMethod": "fadeIn",
+                                "hideMethod": "fadeOut"
+                            }
+                        fetchData();
+                    }
+                    else {
+                        console.error("olmadi");
+                    }
+                })
+                .catch(err => err);
+            });
+        }
+    </script>
 </body>
 </html>
 

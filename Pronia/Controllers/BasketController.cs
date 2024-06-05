@@ -69,11 +69,59 @@ namespace Pronia.Controllers
 
                 }
             }
-
-           
             return View(basket);
         }
+        public async Task<IActionResult> GetBasket()
+        {
+            List<BasketItemVM> datas = new List<BasketItemVM>();
 
+            if (User.Identity.IsAuthenticated)
+            {
+                var user = await _userManager.Users
+                    .Include(u => u.BasketItems)
+                    .ThenInclude(bi => bi.Product)
+                    .FirstOrDefaultAsync(u => u.Id == User.FindFirst(ClaimTypes.NameIdentifier).Value);
+
+                foreach (var item in user.BasketItems)
+                {
+                    datas.Add(new BasketItemVM
+                    {
+                        Count = item.Count,
+                        Id = item.ProductId,
+                        Name = item.Product.Name,
+                        ImageURL = item.Product.ImageUrl,
+                        Price = item.Product.SellPrice
+                    });
+                }
+            }
+            else
+            {
+                if (Request.Cookies.Any(x => x.Key == "basket"))
+                {
+                    var basket = JsonConvert.DeserializeObject<List<BasketCookiesItemVM>>(Request.Cookies["basket"] ?? "[]");
+                    if (basket == null) throw new Exception();
+                    var basketIds = basket.Select(x => x.Id).ToList();
+                    var products = await _context.Products
+                        .Where(x => basketIds.Contains(x.Id))
+                        .ToListAsync();
+                    datas = products
+                        .Select(x => new BasketItemVM
+                        {
+                            Id = x.Id,
+                            Name = x.Name,
+                            Count = basket.FirstOrDefault(b => b.Id == x.Id).Count,
+                            ImageURL = x.ImageUrl,
+                            Price = x.SellPrice * ((100 - x.Discount) / 100m)
+                        }).ToList();
+                }
+            }
+            return Ok(new BasketModalVM
+            {
+                Items = datas,
+                Total = datas.Sum(x => x.Count * x.Price),
+                Count = datas.Sum(x => x.Count)
+            });
+        }
         public async Task<IActionResult> AddBasket(int? id)
         {
             if (id == null || id<1) return BadRequest();
@@ -150,14 +198,8 @@ namespace Pronia.Controllers
 
            
            
-            return RedirectToAction("index","home");
+            return PartialView("_Basket");
             
-        }
-
-        public IActionResult GetBasket()
-        {
-
-            return Content(Request.Cookies["basket"]);
         }
     }
 }

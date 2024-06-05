@@ -5,7 +5,7 @@
         <div class="col-xl-3 col-md-4 col-sm-6 pt-4">
             <div class="product-item">
                 <div class="product-img">
-                    <a href="shop.html">
+                    <a asp-action="Details" asp-controller="Product" asp-route-id="@item.Id">
                         <img class="primary-img"
                              src="~/@item.ImageUrl"
                              alt="Product Images" />
@@ -37,7 +37,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a asp-action="addbasket" asp-controller="basket" asp-route-id="@item.Id"
+                                <a class="add-basket" asp-action="addbasket" asp-controller="basket" asp-route-id="@item.Id"
                                    data-tippy="Add to cart"
                                    data-tippy-inertia="true"
                                    data-tippy-animation="shift-away"

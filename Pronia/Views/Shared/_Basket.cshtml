@@ -1,5 +1,4 @@
-﻿@model BasketModalVM
-<div class="offcanvas-body">
+﻿<div class="offcanvas-body">
     <div class="minicart-content">
         <div class="minicart-heading">
             <h4 class="mb-0">Shopping Cart</h4>
@@ -13,8 +12,8 @@
                    data-tippy-theme="sharpborder"></i>
             </a>
         </div>
-        <ul class="minicart-list">
-            @foreach (var item in Model.Items)
+        <ul class="minicart-list" id="minicart-list">
+            @* @foreach (var item in Model.Items)
             {
                 <li class="minicart-product">
                     <a class="product-item_remove" href="#">
@@ -38,12 +37,12 @@
                         <span class="product-item_quantity">@item.Count x $@item.Price</span>
                     </div>
                 </li>
-            }
+            } *@
         </ul>
     </div>
     <div class="minicart-item_total">
         <span>Subtotal</span>
-        <span class="ammount">$@Model.Items.Sum(x=> x.Count * x.Price)</span>
+        <span class="ammount" id="ammount">@* $@Model.Items.Sum(x=> x.Count * x.Price) *@</span>
     </div>
     <div class="group-btn_wrap d-grid gap-2">
         <a asp-action="Index" asp-controller="Basket" class="btn btn-dark">View Cart</a>

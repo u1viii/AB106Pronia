@@ -1311,3 +1311,4 @@ C:\Users\sabir\Desktop\AB106Pronia\Pronia\obj\Debug\net8.0\scopedcss\bundle\Pron
 C:\Users\sabir\Desktop\AB106Pronia\Pronia\obj\Debug\net8.0\Pronia.csproj.Up2Date
 C:\Users\sabir\Desktop\AB106Pronia\Pronia\obj\Debug\net8.0\Pronia.genruntimeconfig.cache
 C:\Users\sabir\Desktop\AB106Pronia\Pronia\obj\Debug\net8.0\ref\Pronia.dll
+C:\Users\gsdle\Masaüstü\Pronia\Pronia\obj\Debug\net8.0\Pronia.sourcelink.json

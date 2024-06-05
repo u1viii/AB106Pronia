@@ -17,99 +17,99 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Pronia
 build_property.RootNamespace = Pronia
-build_property.ProjectDir = C:\Users\sabir\Desktop\AB106Pronia\Pronia\
+build_property.ProjectDir = C:\Users\gsdle\Masaüstü\Pronia\Pronia\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\sabir\Desktop\AB106Pronia\Pronia
+build_property.MSBuildProjectDirectory = C:\Users\gsdle\Masaüstü\Pronia\Pronia
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/sabir/Desktop/AB106Pronia/Pronia/Areas/Admin/Views/Category/Create.cshtml]
+[C:/Users/gsdle/Masaüstü/Pronia/Pronia/Areas/Admin/Views/Category/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sabir/Desktop/AB106Pronia/Pronia/Areas/Admin/Views/Category/Index.cshtml]
+[C:/Users/gsdle/Masaüstü/Pronia/Pronia/Areas/Admin/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sabir/Desktop/AB106Pronia/Pronia/Areas/Admin/Views/Product/Create.cshtml]
+[C:/Users/gsdle/Masaüstü/Pronia/Pronia/Areas/Admin/Views/Product/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sabir/Desktop/AB106Pronia/Pronia/Areas/Admin/Views/Product/Index.cshtml]
+[C:/Users/gsdle/Masaüstü/Pronia/Pronia/Areas/Admin/Views/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sabir/Desktop/AB106Pronia/Pronia/Areas/Admin/Views/Shared/_Layout.cshtml]
+[C:/Users/gsdle/Masaüstü/Pronia/Pronia/Areas/Admin/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sabir/Desktop/AB106Pronia/Pronia/Areas/Admin/Views/Slider/Create.cshtml]
+[C:/Users/gsdle/Masaüstü/Pronia/Pronia/Areas/Admin/Views/Slider/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2xpZGVyXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sabir/Desktop/AB106Pronia/Pronia/Areas/Admin/Views/Slider/Index.cshtml]
+[C:/Users/gsdle/Masaüstü/Pronia/Pronia/Areas/Admin/Views/Slider/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2xpZGVyXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sabir/Desktop/AB106Pronia/Pronia/Areas/Admin/Views/Slider/Update.cshtml]
+[C:/Users/gsdle/Masaüstü/Pronia/Pronia/Areas/Admin/Views/Slider/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2xpZGVyXFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sabir/Desktop/AB106Pronia/Pronia/Areas/Admin/Views/_ViewImports.cshtml]
+[C:/Users/gsdle/Masaüstü/Pronia/Pronia/Areas/Admin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sabir/Desktop/AB106Pronia/Pronia/Areas/Admin/Views/_ViewStart.cshtml]
+[C:/Users/gsdle/Masaüstü/Pronia/Pronia/Areas/Admin/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sabir/Desktop/AB106Pronia/Pronia/Views/Account/Login.cshtml]
+[C:/Users/gsdle/Masaüstü/Pronia/Pronia/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sabir/Desktop/AB106Pronia/Pronia/Views/Account/Register.cshtml]
+[C:/Users/gsdle/Masaüstü/Pronia/Pronia/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sabir/Desktop/AB106Pronia/Pronia/Views/Basket/Index.cshtml]
+[C:/Users/gsdle/Masaüstü/Pronia/Pronia/Views/Basket/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFza2V0XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sabir/Desktop/AB106Pronia/Pronia/Views/Home/About.cshtml]
+[C:/Users/gsdle/Masaüstü/Pronia/Pronia/Views/Home/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sabir/Desktop/AB106Pronia/Pronia/Views/Home/Index.cshtml]
+[C:/Users/gsdle/Masaüstü/Pronia/Pronia/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sabir/Desktop/AB106Pronia/Pronia/Views/Shared/Components/Footer/Default.cshtml]
+[C:/Users/gsdle/Masaüstü/Pronia/Pronia/Views/Shared/Components/Footer/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRm9vdGVyXERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sabir/Desktop/AB106Pronia/Pronia/Views/Shared/Components/Header/Default.cshtml]
+[C:/Users/gsdle/Masaüstü/Pronia/Pronia/Views/Shared/Components/Header/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcSGVhZGVyXERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sabir/Desktop/AB106Pronia/Pronia/Views/Shared/Components/Product/Default.cshtml]
+[C:/Users/gsdle/Masaüstü/Pronia/Pronia/Views/Shared/Components/Product/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcUHJvZHVjdFxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sabir/Desktop/AB106Pronia/Pronia/Views/Shared/_Basket.cshtml]
+[C:/Users/gsdle/Masaüstü/Pronia/Pronia/Views/Shared/_Basket.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9CYXNrZXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sabir/Desktop/AB106Pronia/Pronia/Views/Shared/_Layout.cshtml]
+[C:/Users/gsdle/Masaüstü/Pronia/Pronia/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sabir/Desktop/AB106Pronia/Pronia/Views/_ViewImports.cshtml]
+[C:/Users/gsdle/Masaüstü/Pronia/Pronia/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sabir/Desktop/AB106Pronia/Pronia/Views/_ViewStart.cshtml]
+[C:/Users/gsdle/Masaüstü/Pronia/Pronia/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
